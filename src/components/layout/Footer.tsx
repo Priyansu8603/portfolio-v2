@@ -9,7 +9,6 @@ const Footer = () => {
       <Flex justify="center">
         <Links />
       </Flex>
-
     </Stack>
   );
 };

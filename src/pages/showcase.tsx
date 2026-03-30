@@ -48,7 +48,6 @@ const ScreenshotCard = styled.figure`
     object-fit: contain;
     display: block;
   }
-
 `;
 
 const Showcase: React.FC = () => {
@@ -58,7 +57,10 @@ const Showcase: React.FC = () => {
         App UI Showcase
       </Heading>
       <Text fontSize="lg" mb={3}>
-        Explore a curated gallery of screenshots from apps I have designed and developed. Each image highlights unique features, user interfaces, and the creative solutions implemented in my projects. Dive in to see the visual journey of my app development experience.
+        Explore a curated gallery of screenshots from apps I have designed and
+        developed. Each image highlights unique features, user interfaces, and
+        the creative solutions implemented in my projects. Dive in to see the
+        visual journey of my app development experience.
       </Text>
 
       <GalleryGrid>

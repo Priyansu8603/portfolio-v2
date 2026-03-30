@@ -85,12 +85,12 @@ const BlogComponent = ({ postData }: BlogPreviewProps) => {
   return (
     <Link href={`/blog/${postData.id}`}>
       <BlogContainer
-          style={
-            colorMode === "dark"
-              ? { backgroundColor: "#22223b", color: "#fff" }
-              : { backgroundColor: "#EDF1FF", color: "#1A202C" }
-          }
-        >
+        style={
+          colorMode === "dark"
+            ? { backgroundColor: "#22223b", color: "#fff" }
+            : { backgroundColor: "#EDF1FF", color: "#1A202C" }
+        }
+      >
         <ImageContainer>
           <img
             style={{ borderRadius: "20px 20px 0 0" }}

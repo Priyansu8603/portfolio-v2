@@ -22,7 +22,7 @@ export const experience = [
       "Ensured Webtonative SDK compatibility with more than 250+ clients website and fixed client-specific bugs.",
       "Integrated RevenueCat SDK, Orufy Connect SDK.",
       "Contributed to Core features: Build PASSCODE Feature, Double Back Press Handler, Migration from Android 14 to Android15, Notification with Background Images.",
-      "Tech Stack: Kotlin, Java, Jetpack Compose, Coroutines, MVVM, WebView, Firebase, OneSignal, GoogleOAuth, Stripe Payment SDK, SharedPreferences, Broadcast Receiver, Services, Multi Modules, Dokka,Postman, GitHub."
+      "Tech Stack: Kotlin, Java, Jetpack Compose, Coroutines, MVVM, WebView, Firebase, OneSignal, GoogleOAuth, Stripe Payment SDK, SharedPreferences, Broadcast Receiver, Services, Multi Modules, Dokka,Postman, GitHub.",
     ],
   },
   {
@@ -45,5 +45,5 @@ export const experience = [
       "Features: Resource Management And Scheduling, JWT Authentication, Forgot Password/Reset Link .",
       "Tech Stack: MVVM Architecture, Flutter , MP Chart Library , NodeJS Backend , PostgreSQL .",
     ],
-  }
+  },
 ];

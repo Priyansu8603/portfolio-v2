@@ -73,5 +73,5 @@ export const socialLinks: Array<MotionLinkProps> = [
     platformName: "Mail ID",
     url: "mailto:kumarPriyansu367@gmail.com",
     icon: FaEnvelope,
-  }
+  },
 ];

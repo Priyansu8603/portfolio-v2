@@ -9,7 +9,8 @@ import type { BlogPostListProps } from "./types";
 
 export const getStaticProps: GetStaticProps<BlogPostListProps> = async () => {
   const allPostsData = getSortedPostsData().filter(
-    (post: BlogPostType) => post?.published && post.id !== null && post.id !== undefined
+    (post: BlogPostType) =>
+      post?.published && post.id !== null && post.id !== undefined
   );
 
   allPostsData.forEach(async (x: BlogPostType) => {

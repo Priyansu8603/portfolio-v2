@@ -13,7 +13,7 @@ import { FaHive } from "react-icons/fa";
 type CompanyProps = {
   org: string;
   role: string;
-  link: string;
+  link?: string;
   date: string;
   content: Array<string>;
 };
@@ -70,9 +70,13 @@ const Details = ({ ...company }: CompanyProps) => {
     <Container>
       <Flex justifyContent="flex-start" alignItems="center">
         <Role>{company.role}</Role>
-        <Link href={company.link}>
+        {company.link ? (
+          <Link href={company.link} isExternal>
+            <Org>{`@${company.org}`}</Org>
+          </Link>
+        ) : (
           <Org>{`@${company.org}`}</Org>
-        </Link>
+        )}
       </Flex>
       <Text>{company.date}</Text>
       <List spacing={3} mt={3}>

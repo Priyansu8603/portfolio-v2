@@ -8,11 +8,13 @@ const HeadSection = () => {
       alignItems="center"
       justifyContent="center"
       textAlign="center"
-      pt={6}    // less padding-top
-      pb={10}   // padding-bottom
-      px={4}    // horizontal padding
+      pt={6} // less padding-top
+      pb={10} // padding-bottom
+      px={4} // horizontal padding
     >
-      <Heading mt={-8} mb={6} size="xl">  {/* less top margin, more bottom margin */}
+      <Heading mt={-8} mb={6} size="xl">
+        {" "}
+        {/* less top margin, more bottom margin */}
         Hi, I&apos;m Priyansu.
       </Heading>
       <Image

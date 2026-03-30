@@ -6,14 +6,16 @@ type TwemojiProps = {
 };
 
 const Twemoji = ({ emoji }: TwemojiProps) => {
+  const html = twemoji.parse(emoji, {
+    folder: "svg",
+    ext: ".svg",
+  }) as unknown as string;
+
   return (
     <span
       // eslint-disable-next-line react/no-danger
       dangerouslySetInnerHTML={{
-        __html: twemoji.parse(emoji, {
-          folder: "svg",
-          ext: ".svg",
-        }),
+        __html: html,
       }}
     />
   );

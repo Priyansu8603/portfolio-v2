@@ -15,6 +15,7 @@ type SessionProps = {
   title: string;
   desc: string;
   image: string;
+  rec?: string;
   date: string;
   slides: string;
 };

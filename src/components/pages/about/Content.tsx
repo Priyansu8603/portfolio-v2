@@ -278,7 +278,6 @@ Open to exciting opportunities. Let's build something amazing together.
 
   const highlightedCode = useMemo(() => highlightCode(codeInput), [codeInput]);
 
-
   const handleRun = () => {
     if (status === "running") return;
     setStatus("running");
@@ -289,12 +288,31 @@ Open to exciting opportunities. Let's build something amazing together.
 
   return (
     <Box position="relative" w="100%">
-      <Box position="absolute" top={2} right={2} zIndex={2} display="flex" alignItems="center" gap={2}>
-        <Button size="sm" colorScheme="purple" onClick={handleRun} isLoading={status === "running"}>
+      <Box
+        position="absolute"
+        top={2}
+        right={2}
+        zIndex={2}
+        display="flex"
+        alignItems="center"
+        gap={2}
+      >
+        <Button
+          size="sm"
+          colorScheme="purple"
+          onClick={handleRun}
+          isLoading={status === "running"}
+        >
           Run
         </Button>
 
-        <Button size="sm" colorScheme="purple" onClick={handleReset} variant="outline" disabled={status === "running"}>
+        <Button
+          size="sm"
+          colorScheme="purple"
+          onClick={handleReset}
+          variant="outline"
+          disabled={status === "running"}
+        >
           Reset
         </Button>
 
@@ -322,9 +340,15 @@ Open to exciting opportunities. Let's build something amazing together.
         overflowX="auto"
       >
         {status === "output" ? (
-          <Box as="pre" m={0}>{outputSummary}</Box>
+          <Box as="pre" m={0}>
+            {outputSummary}
+          </Box>
         ) : (
-          <Box as="pre" m={0} dangerouslySetInnerHTML={{ __html: highlightedCode }} />
+          <Box
+            as="pre"
+            m={0}
+            dangerouslySetInnerHTML={{ __html: highlightedCode }}
+          />
         )}
       </Box>
     </Box>

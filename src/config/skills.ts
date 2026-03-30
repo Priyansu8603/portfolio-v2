@@ -61,8 +61,7 @@ export const skills = [
   },
   {
     name: "MVVM",
-    image:
-      "",
+    image: "",
     type: "technology",
   },
   {
