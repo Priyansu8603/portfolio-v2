@@ -1,4 +1,4 @@
-import { Divider, Flex, Link, Stack, Text } from "@chakra-ui/react";
+import { Divider, Flex, Stack } from "@chakra-ui/react";
 
 import Links from "../pages/about/Links/index";
 

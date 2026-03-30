@@ -1,3 +1,6 @@
+const kotlinLogoUrl =
+  "https://res.cloudinary.com/dlnz6ukow/image/upload/v1761115705/kotlin_fm1eyg.png";
+
 export const skills = [
   {
     name: "Android",
@@ -19,8 +22,7 @@ export const skills = [
   },
   {
     name: "Kotlin",
-    image:
-      "https://res.cloudinary.com/dlnz6ukow/image/upload/v1761115705/kotlin_fm1eyg.png",
+    image: kotlinLogoUrl,
     type: "language",
   },
   {
@@ -37,8 +39,7 @@ export const skills = [
   },
   {
     name: "Coroutines",
-    image:
-      "https://res.cloudinary.com/dlnz6ukow/image/upload/v1761115705/kotlin_fm1eyg.png",
+    image: kotlinLogoUrl,
     type: "technology",
   },
   {
@@ -55,8 +56,7 @@ export const skills = [
   },
   {
     name: "Flow API",
-    image:
-      "https://res.cloudinary.com/dlnz6ukow/image/upload/v1761115705/kotlin_fm1eyg.png",
+    image: kotlinLogoUrl,
     type: "technology",
   },
   {

@@ -1,4 +1,4 @@
-import { Box, Flex, Text, useColorMode } from "@chakra-ui/react";
+import { Box, Flex, useColorMode } from "@chakra-ui/react";
 import Link from "next/link";
 
 import Navigation from "./Navigation";

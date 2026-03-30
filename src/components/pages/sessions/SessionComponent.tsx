@@ -9,13 +9,12 @@ import {
   useColorMode,
 } from "@chakra-ui/react";
 import styled from "@emotion/styled";
-import { FaYoutube, FaLayerGroup } from "react-icons/fa";
+import { FaLayerGroup } from "react-icons/fa";
 
 type SessionProps = {
   title: string;
   desc: string;
   image: string;
-  rec?: string;
   date: string;
   slides: string;
 };
@@ -82,14 +81,7 @@ const ContentGrid = styled.div`
   }
 `;
 
-function SessionComponent({
-  title,
-  desc,
-  image,
-  rec,
-  date,
-  slides,
-}: SessionProps) {
+function SessionComponent({ title, desc, image, date, slides }: SessionProps) {
   const { colorMode } = useColorMode();
   return (
     <Container>

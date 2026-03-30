@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-escape */
 import { Box, Button, Spinner, Stack, Text } from "@chakra-ui/react";
 import { useMemo, useState } from "react";
 

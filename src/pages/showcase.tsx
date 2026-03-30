@@ -64,7 +64,7 @@ const Showcase: React.FC = () => {
       </Text>
 
       <GalleryGrid>
-        {screenshots.map((shot, index) => (
+        {screenshots.map((shot) => (
           <ScreenshotCard key={shot.primary}>
             <img
               src={shot.primary}
