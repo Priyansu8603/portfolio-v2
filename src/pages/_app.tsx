@@ -1,11 +1,11 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import type { EmotionCache } from "@emotion/cache";
 import { CacheProvider } from "@emotion/react";
+import { Analytics } from "@vercel/analytics/react";
 import type { AppProps } from "next/app";
 import Script from "next/script";
 import "@fontsource/recursive/latin.css";
 import "@fontsource/catamaran/latin.css";
-import { Analytics } from "@vercel/analytics/react";
 
 import Layout from "components/layout";
 import createEmotionCache from "styles/createEmotionCache";

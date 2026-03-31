@@ -1,5 +1,6 @@
 import { Box, Heading, Text, useColorMode } from "@chakra-ui/react";
 import styled from "@emotion/styled";
+import Image from "next/image";
 import Link from "next/link";
 
 import type { BlogPostType } from "models/blog";
@@ -92,10 +93,18 @@ const BlogComponent = ({ postData }: BlogPreviewProps) => {
         }
       >
         <ImageContainer>
-          <img
-            style={{ borderRadius: "20px 20px 0 0" }}
+          <Image
             src={postData.cover}
-            alt={postData.description}
+            alt={postData.description || postData.title}
+            width={800}
+            height={450}
+            style={{
+              borderRadius: "20px 20px 0 0",
+              width: "100%",
+              height: "auto",
+              objectFit: "cover",
+            }}
+            unoptimized
           />
         </ImageContainer>
 

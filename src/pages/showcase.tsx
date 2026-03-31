@@ -1,5 +1,7 @@
 import { Heading, Text, Box } from "@chakra-ui/react";
 import styled from "@emotion/styled";
+import Image from "next/image";
+import { useState } from "react";
 
 const screenshots = Array.from({ length: 25 }, (_, index) => {
   const num = index + 1;
@@ -40,15 +42,34 @@ const ScreenshotCard = styled.figure`
     transform: translateY(-2px);
     box-shadow: rgba(17, 12, 46, 0.25) 0px 60px 120px 0px;
   }
-
-  img {
-    width: 100%;
-    height: auto;
-    max-height: 420px;
-    object-fit: contain;
-    display: block;
-  }
 `;
+
+type ScreenshotType = {
+  primary: string;
+  fallback: string;
+  title: string;
+  caption: string;
+};
+
+const Screenshot = ({ shot }: { shot: ScreenshotType }) => {
+  const [src, setSrc] = useState(shot.primary);
+
+  return (
+    <Image
+      src={src}
+      alt={shot.title}
+      width={1200}
+      height={800}
+      style={{ width: "100%", height: "auto", objectFit: "contain" }}
+      unoptimized
+      onError={() => {
+        if (src === shot.primary) {
+          setSrc(shot.fallback);
+        }
+      }}
+    />
+  );
+};
 
 const Showcase: React.FC = () => {
   return (
@@ -66,17 +87,7 @@ const Showcase: React.FC = () => {
       <GalleryGrid>
         {screenshots.map((shot) => (
           <ScreenshotCard key={shot.primary}>
-            <img
-              src={shot.primary}
-              alt={shot.title}
-              onError={(event) => {
-                const target = event.currentTarget;
-                if (target.src === shot.primary) {
-                  target.onerror = null;
-                  target.src = shot.fallback;
-                }
-              }}
-            />
+            <Screenshot shot={shot} />
           </ScreenshotCard>
         ))}
       </GalleryGrid>
