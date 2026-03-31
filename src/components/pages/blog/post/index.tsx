@@ -1,6 +1,4 @@
-import { Box, useColorModeValue } from "@chakra-ui/react";
-import type { GiscusProps } from "@giscus/react";
-import { Giscus } from "@giscus/react";
+import { Box } from "@chakra-ui/react";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 
@@ -11,8 +9,6 @@ import BlogPostHead from "./Head";
 import type { BlogPostProps } from "./types";
 
 const BlogPost = ({ postData }: BlogPostProps) => {
-  const giscusTheme: GiscusProps["theme"] = useColorModeValue("light", "dark");
-
   return (
     <Box as="article">
       <BlogPostHead postData={postData} />
@@ -24,19 +20,6 @@ const BlogPost = ({ postData }: BlogPostProps) => {
       >
         {postData.rawContent}
       </ReactMarkdown>
-
-      <Box marginY={12}>
-        <Giscus
-          repo="CIPHERTron/portfolio-v2"
-          repoId="R_kgDOGYrouQ"
-          mapping="pathname"
-          category="Blog Post"
-          categoryId="DIC_kwDOGYrouc4CBGJm"
-          reactionsEnabled="1"
-          theme={giscusTheme}
-          emitMetadata="0"
-        />
-      </Box>
     </Box>
   );
 };

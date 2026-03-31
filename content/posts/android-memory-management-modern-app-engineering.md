@@ -7,7 +7,7 @@ published: true
 latest: false
 description: "A practical deep dive into Android memory behavior: heap limits, GC pauses, largeHeap pitfalls, multi-process design, off-heap strategies, and proactive memory trimming for production-grade apps."
 cover: "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*fTdENUQAJ2NrCl5tFLIvHg.png"
-articleLink: "/blog"
+articleLink: "https://medium.com/@kumarpriyansu367/android-memory-management-for-modern-app-engineering-2a493b4d1b2a"
 tags:
   - Android Memory Management
   - Performance Optimization

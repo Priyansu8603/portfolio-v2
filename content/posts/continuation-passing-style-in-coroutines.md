@@ -7,7 +7,7 @@ published: true
 latest: true
 description: "A deep dive into Continuation Passing Style in Kotlin coroutines, explaining how suspend functions compile into state machines and why coroutines suspend without blocking threads."
 cover: "https://miro.medium.com/v2/resize:fit:750/format:webp/1*BGngYai3T1ASmDMx13U3Mw.png"
-articleLink: "/blog"
+articleLink: "https://medium.com/@kumarpriyansu367/continuation-passing-style-in-coroutines-66346c29c707"
 tags:
   - Continuation Pattern
   - Kotlin Coroutines

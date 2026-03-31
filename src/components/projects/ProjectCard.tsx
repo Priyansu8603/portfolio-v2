@@ -194,7 +194,7 @@ function ProjectCard({
           <span className="icon">
             <FaLock />
           </span>
-          <span className="url">priyansu-kumar.vercel.app</span>
+          <span className="url">priyansu-portfolio-v2.vercel.app</span>
         </WebsiteUrl>
         <span />
       </TabBar>

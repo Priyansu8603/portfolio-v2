@@ -7,7 +7,7 @@ published: true
 latest: false
 description: "A practical deep dive into Android image loading internals: why naive loading causes OOM, jank, and slow feeds, and how downsampling, cancellation, caching, and bitmap pooling solve it at scale."
 cover: "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*jjvqpdhbHJRkt4AGpPBCWg.png"
-articleLink: "/blog"
+articleLink: "https://medium.com/@kumarpriyansu367/image-loading-internals-in-android-a2fc764d3692"
 tags:
   - Android App Development
   - Android Architecture

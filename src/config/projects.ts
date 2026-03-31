@@ -22,7 +22,7 @@ export const projects = [
     desc: "An end-customer Android app for a multi-tenant Supplement platform with secure auth, Health Supplements, Order workflows, Scan Qr codes, and delivery options.",
     github: "https://github.com/Priyansu8603/FitPro-Android",
     demo: "https://github.com/Priyansu8603/FitPro-Android",
-    preview: "/images/FitPro.png",
+    preview: "/images/Fitpro.png",
     tech: [
       "Kotlin",
       "Jetpack Compose",
